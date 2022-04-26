@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="sortcut icon" type="images/svg" href="images/icon.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="firstPage.css">
+    <title>Pets</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="flexbox">
+                <a href=""> <img src="images/лого.svg" alt="logo"> </a>
+                <nav>
+                    <a href="#">Каталог животных</a>
+                    <a href="#">Добавить животное</a>
+                    <a href="secondPage.html">Полезно и интересно</a>
+                    <a href="#">Помочь</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Форма добавления животного</h1>
+            <div class="name_form">
+                <h3>Кличка</h3>
+                <input typfe="text">
+            </div>
+            <div class="second-name_form">
+                <h3>Название приюта</h3>
+                <input type="text">
+            </div>
+            <div class="location_form">
+                <h3>Месторасположение</h3>
+                <input type="text">
+            </div>
+            <div class="filters">
+                <div class="kind">
+                    <h3>Вид животного:</h3>
+                    <label for="dog">
+                         <input id="dog" type="radio" class="radio" name="kindPet">
+                         <span class="fake"></span>
+                         <span class="text">Собака</span>
+                    </label>
+                    <label for="cat"> 
+                        <input id="cat" type="radio" class="radio" name="kindPet"> 
+                        <span class="fake"></span>
+                        <span class="text" id="finaly">Кошка</span>
+                    </label>
+                </div>
+                <div class="pol">
+                    <h3>Пол:</h3>
+                    <label for="man">
+                         <input id="man" type="radio" class="radio" name="pol">
+                         <span class="fake"></span>
+                         <span class="text">Самец</span>
+                    </label>
+                    <label for="woman"> 
+                        <input id="woman" type="radio" class="radio" name="pol"> 
+                        <span class="fake"></span>
+                        <span class="text" id="finaly">Самка</span>
+                    </label>
+                </div>
+                <div class="colorOfPet">
+                    <h3>Расцветки:</h3>
+                    <label for="black">
+                         <input id="black" type="radio" class="radio" name="colorOfPet">
+                         <span class="fake"></span>
+                         <span class="text">Черный</span>
+                    </label>
+                    <label for="brown"> 
+                        <input id="brown" type="radio" class="radio" name="colorOfPet"> 
+                        <span class="fake"></span>
+                        <span class="text">Коричневый</span>
+                    </label>
+                    <label for="rizhy">
+                        <input id="rizhy" type="radio" class="radio" name="colorOfPet">
+                        <span class="fake"></span>
+                        <span class="text">Рыжий</span>
+                   </label>
+                   <label for="white"> 
+                       <input id="white" type="radio" class="radio" name="colorOfPet"> 
+                       <span class="fake"></span>
+                       <span class="text" id="finaly">Белый</span>
+                   </label>
+                </div>
+            </div>
+            <div class="coment">
+                <textarea placeholder="Добавить описание..." name="opisaine"></textarea>
+            </div>
+            <div class="photo">
+                <div class="addPhoto" name="addPhoto">
+                    <p>Добавить фото</p>
+                </div>
+                <div class="choosePicture">
+                    <textarea placeholder="Перетащите файл в эту облость" name="choosePicture"></textarea>
+                </div>
+            </div>
+            <div class="sent">
+                <a href="#" name="sendPhoto">Отправить</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer_logo">
+                <a href="#"> <img src="images/лого.svg" alt="logo"> </a>
+            </div>
+        </div>
+    </footer>
+    <script src="firstPage.js"></script>
+</body>
+</html>
