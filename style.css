@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1156px;
+    margin: auto;
+}
+header{
+    background-color: #F97B3A;
+    padding: 10px 0 10px 0;
+}
+.logo{
+    display: inline-block;
+}
+nav{
+    display: inline-block;
+    vertical-align: 21px;
+    margin-left: 221px;
+}
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 60px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+.last{
+    margin-right: 0;
+}
+main h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin-top: 34px;
+    margin-bottom: 20px;
+}
+.contact{
+    display: inline-block;
+    margin-right: 675px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #535353;
+}
+.contact2{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #535353;
+}
+main h2{
+    margin-top: 59px;
+    margin-bottom: 48px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 500px;
+    margin-bottom: 43px;
+}
+.button{
+    display: inline-block;
+    background-color: #F97B3A;
+    text-decoration: none;
+    color: #fff;
+    padding-right: 29px;
+    border-radius: 5px;
+    line-height: 71px;
+    text-align: center;
+    margin-bottom: 85px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.button::before{
+    content: url(images/Vector.png);
+    display: inline-block;
+    width: 77px;
+    height: 71px;
+    line-height: 100px;
+    text-align: center;
+}
+h3{
+    border-bottom: 2px solid #000000;
+    margin-bottom: 48px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
