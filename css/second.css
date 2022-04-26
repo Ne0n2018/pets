@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1156px;
+    margin: auto;
+}
+.wrap1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    background-color: #F97B3A;
+    padding: 10px 0;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav a{
+    display: inline-block;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    color: white;
+    margin-left: 60px;
+    text-decoration: none;
+}
+.section1{
+    margin-top: 37px;
+    margin-bottom: 42px;
+}
+.zag{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 0 12px 7px;
+}
+.line{
+    background-color: black;
+    height: 2px;
+    margin-bottom: 30px;
+}
+.wrap2{
+    display: flex;
+    justify-content: space-between;
+}
+.cards1{
+    border: 3px solid #F97B3A;
+    border-radius: 0 0 10px 10px;
+    width: 274px;
+    height: 119px;
+    padding: 7px 0 0 13px;
+}
+.cards1 h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+}
+.cards1 p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.block{
+    display: block;
+}
+.block2{
+    border: 3px solid #F97B3A;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.block2 > div{
+    width: calc(50% - 30px);
+}
+.block2 h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 14px;
+}
+.block3{
+    margin-top: 16px;
+    margin-left: 30px;
+}
+.block4{
+    display: flex;
+    flex-wrap: wrap;
+    width: 446px;
+    margin-left: 18px;
+}
+.block4 input{
+    position: absolute;
+    opacity: 0;
+    width: 19px;
+    height: 19px;
+}
+.block4 span{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border: 2px solid #F97B3A;
+    vertical-align: middle;
+}
+.block4 input:checked + span{
+    background-image: url(../images/paw2.svg);
+}
+.block4 label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    vertical-align: middle;
+}
+.block4 div{
+    width: 50%;
+    margin-bottom: 26px;
+}
