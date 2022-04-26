@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+header{
+    background-color: #F97B3A;
+    padding: 10px 0 10px 0;
+}
+.container{
+    max-width: 1156px;
+    margin: auto;
+}
+.logo{
+    display: inline-block;
+}
+nav{
+    display: inline-block;
+    vertical-align: 21px;
+    margin-left: 221px;
+}
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 60px;
+    font-size: 24px;
+}
+.last{
+    margin-right: 0;
+}
+.background{
+    background-image: url(images/Rectangle\ 8.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 274px 0 160px 0;
+}
+.first-text{
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 76px;
+}
+.first-button{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 20px 50px;
+    background-color: #F97B3A;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.first-button:hover{
+    background:none;
+    border: #F97B3A solid 1px;
+    color: #F97B3A;
+}
+.second-button{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 20px 50px;
+    background-color: #F97B3A;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.second-button:hover{
+    background:none;
+    border: #F97B3A solid 1px;
+    color: #F97B3A;
+}
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+  }
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  } 
+  .form-container .cancel {
+    background-color: red;
+  }
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
