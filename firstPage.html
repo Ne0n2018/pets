@@ -15,6 +15,51 @@
 </head>
 <body>
     <header>
+        <div class="navigation">
+            <ul>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text"> Главная </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="apps-outline"></ion-icon>
+                        </span>
+                        <span class="text"> Каталог </span>
+                    </a>
+                </li>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="duplicate-outline"></ion-icon>
+                        </span>
+                        <span class="text"> Добавить животное </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="secondPage.html">
+                        <span class="icon">
+                            <ion-icon name="newspaper-outline"></ion-icon>
+                        </span>
+                        <span class="text"> Полезно и интересно </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="information-circle-outline"></ion-icon>
+                        </span>
+                        <span class="text"> Помочь </span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
         <div class="container">
             <div class="flexbox">
                 <a href=""> <img src="images/лого.svg" alt="logo"> </a>
@@ -29,7 +74,7 @@
     </header>
     <main>
         <div class="container">
-            <h1>Форма добавления животного</h1>
+            <h1 class="addForm">Форма добавления животного</h1>
             <div class="name_form">
                 <h3>Кличка</h3>
                 <input typfe="text">
@@ -71,26 +116,30 @@
                 </div>
                 <div class="colorOfPet">
                     <h3>Расцветки:</h3>
-                    <label for="black">
-                         <input id="black" type="radio" class="radio" name="colorOfPet">
-                         <span class="fake"></span>
-                         <span class="text">Черный</span>
+                    <div class="firstRow">
+                        <label for="black">
+                            <input id="black" type="radio" class="radio" name="colorOfPet">
+                            <span class="fake"></span>
+                            <span class="text">Черный</span>
+                        </label>
+                        <label for="brown"> 
+                            <input id="brown" type="radio" class="radio" name="colorOfPet"> 
+                            <span class="fake"></span>
+                            <span class="text brow">Коричневый</span>
+                        </label>
+                    </div>
+                    <div class="secondRow">
+                        <label for="rizhy">
+                            <input id="rizhy" type="radio" class="radio" name="colorOfPet">
+                            <span class="fake"></span>
+                            <span class="text">Рыжий</span>
                     </label>
-                    <label for="brown"> 
-                        <input id="brown" type="radio" class="radio" name="colorOfPet"> 
+                    <label for="white"> 
+                        <input id="white" type="radio" class="radio" name="colorOfPet"> 
                         <span class="fake"></span>
-                        <span class="text">Коричневый</span>
+                        <span class="text" id="finaly">Белый</span>
                     </label>
-                    <label for="rizhy">
-                        <input id="rizhy" type="radio" class="radio" name="colorOfPet">
-                        <span class="fake"></span>
-                        <span class="text">Рыжий</span>
-                   </label>
-                   <label for="white"> 
-                       <input id="white" type="radio" class="radio" name="colorOfPet"> 
-                       <span class="fake"></span>
-                       <span class="text" id="finaly">Белый</span>
-                   </label>
+                    </div>
                 </div>
             </div>
             <div class="coment">
@@ -101,11 +150,11 @@
                     <p>Добавить фото</p>
                 </div>
                 <div class="choosePicture">
-                    <textarea placeholder="Перетащите файл в эту облость" name="choosePicture"></textarea>
+                    <p>Перетащите файл в эту облость</p>
                 </div>
             </div>
-            <div class="sent">
-                <a href="#" name="sendPhoto">Отправить</a>
+            <div class="send">
+                <p name="sendPhoto">Отправить</p>
             </div>
         </div>
     </main>
@@ -117,5 +166,16 @@
         </div>
     </footer>
     <script src="firstPage.js"></script>
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) => item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) => item.addEventListener('click', activeLink));
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
