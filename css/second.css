@@ -37,6 +37,7 @@ nav a{
 .section1{
     margin-top: 37px;
     margin-bottom: 42px;
+    position: relative;
 }
 .zag{
     font-family: 'Roboto';
@@ -87,6 +88,9 @@ nav a{
 .wrap > div{
     width: calc(50% - 30px);
 }
+.section2{
+    position: relative;
+}
 .block2{
     border: 3px solid #F97B3A;
     border-radius: 20px;
@@ -121,7 +125,16 @@ nav a{
     bottom: 13px;
     right: 18px;
 }
+.block2 button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #F97B3A;
+    padding: 3px 28px;
+    border: 2px solid #F97B3A;
+}
 .block3{
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 16px;
     margin-left: 30px;
 }
@@ -143,6 +156,7 @@ nav a{
     height: 19px;
     border: 2px solid #F97B3A;
     vertical-align: middle;
+    margin-right: 7px;
 }
 .block4 input:checked + span{
     background-image: url(../images/paw2.svg);
@@ -160,7 +174,7 @@ nav a{
     margin-bottom: 26px;
 }
 .section3{
-    margin-bottom: 100px;
+    margin-bottom: 106px;
     position: relative;
 }
 .section3 h2{
@@ -224,18 +238,78 @@ footer .container{
 footer img{
     padding: 25px 0;
 }
+footer div{
+    position: relative;
+}
 .el1{
     position: absolute;
-    top: 414px;
+    top: 350px;
     left: -446px;
 }
 .el2{
     position: absolute;
     right: -678px;
-    top: -361px;
+    top: -200px;
 }
 .el3{
     position: absolute;
-    top: 772px;
-    right: -570px;
+    bottom: 0;
+    right: -576px;
+}
+
+@media(max-width:1256px){
+    .container{
+        max-width: 95%;
+    }
+}
+@media(max-width:1175px){
+    .wrap2{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .wrap2 > div{
+        margin-bottom: 30px;
+    }
+    .section1{
+        margin-bottom: 12px;
+    }
+    .wrap4{
+        justify-content: space-around;
+    }
+}
+@media(max-width:1040px){
+    .wrap > div{
+        width: 480px
+    }
+}
+@media(max-width:540px){
+    .wrap > div{
+        width: 240px
+    }
+    .block4 div{
+        width: 240px;
+        margin-bottom: 26px;
+    }
+}
+@media(max-width:420px){
+    .section3 .block{
+        width: 300px;
+    }
+    .cards2{
+        width: 300px;
+    }
+    .cards2 h3{
+        font-size: 20px;
+    }
+    .cards2 > p{
+        font-size: 16px;
+    }
+    .wrap3 p{
+        font-size: 10px;
+    }
+}
+@media(max-width:380px){
+    .section3 h2{
+        font-size: 20px;
+    }
 }
