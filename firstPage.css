@@ -61,7 +61,7 @@ header .navigation ul li a {
     width: 100%;
 }
 
-.navigation ul li a .icon {
+header .navigation ul li a .icon {
     position: relative;
     display: block;
     line-height: 75px;
@@ -71,11 +71,11 @@ header .navigation ul li a {
     color: #222327;
 }
 
-.navigation ul li.active a .icon {
+header .navigation ul li.active a .icon {
     transform: translateY(45px);
 }
 
-.navigation ul li a .text {
+header .navigation ul li a .text {
     position: absolute;
     color: #222327;
     font-size: .75em;
@@ -85,12 +85,12 @@ header .navigation ul li a {
     transform: translateY(-30px);
 }
 
-.navigation ul li.active a .text {
+header .navigation ul li.active a .text {
     opacity: 1;
     transform: translateY(-20px);
 }
 
-.indicator {
+header .indicator {
     position: absolute;
     left: 32.4%;
     bottom: -43%;
@@ -102,7 +102,7 @@ header .navigation ul li a {
     transition: .5s;
 }
 
-.indicator::before {
+header .indicator::before {
     content: ' ';
     position: absolute;
     top: 25%;
@@ -114,7 +114,7 @@ header .navigation ul li a {
     box-shadow: 1px 10px 0 0 var(--clr);
 }
 
-.indicator::after {
+header .indicator::after {
     content: ' ';
     position: absolute;
     top: 25%;
@@ -126,27 +126,27 @@ header .navigation ul li a {
     box-shadow: -1px 10px 0 0 var(--clr);
 }
 
-.navigation ul li:nth-child(1).active ~ .indicator  {
+header .navigation ul li:nth-child(1).active ~ .indicator  {
     transform: translateX(calc(70px * 0));
 }
 
-.navigation ul li:nth-child(2).active ~ .indicator  {
+header .navigation ul li:nth-child(2).active ~ .indicator  {
     transform: translateX(calc(70px * 1));
 }
 
-.navigation ul li:nth-child(3).active ~ .indicator  {
+header .navigation ul li:nth-child(3).active ~ .indicator  {
     transform: translateX(calc(70px * 2));
 }
 
-.navigation ul li:nth-child(4).active ~ .indicator  {
+header .navigation ul li:nth-child(4).active ~ .indicator  {
     transform: translateX(calc(70px * 3));
 }
 
-.navigation ul li:nth-child(5).active ~ .indicator  {
+header .navigation ul li:nth-child(5).active ~ .indicator  {
     transform: translateX(calc(70px * 4));
 }
 
-.flexbox {
+header .flexbox {
     display: flex;
     justify-content: space-between;
 }
@@ -171,7 +171,7 @@ nav a {
     transition: .4s;
 }
 
-.finaly {
+header .finaly {
     padding-right: 0px;
 }
 
@@ -428,7 +428,7 @@ footer {
     padding: 25px 0px;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1203px) {
     header {
         background-color: #fff;
     }
@@ -443,6 +443,10 @@ footer {
 
     .navigation {
        display: flex;
+    }
+
+    .indicator {
+        left: 35%;
     }
 
     body {
@@ -474,18 +478,28 @@ footer {
         width: 94%;
     }
 
-    .choosePicture {
-        display: none;
-    }
-
     .addPhoto {
         margin-bottom: 80px;
         width: 100%;
     }
 
+    .choosePicture {
+        margin-left: 0px;
+    }
+
     .send p:hover {
         color: #fff;
         background-color: #F97B3A;
+    }
+}
+
+@media(max-width: 1024px) {
+    .indicator {
+        left: 32.3%;
+    }
+
+    .choosePicture {
+        display: none;
     }
 }
 
