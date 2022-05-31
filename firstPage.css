@@ -20,7 +20,7 @@ header img {
     display: inline-block;
 }
 
-.navigation .text {
+header .navigation .text {
     margin-right: 0px;
 }
 
@@ -28,7 +28,7 @@ header img {
     --clr: #fff;
 }
 
-.navigation {
+header .navigation {
     display: none;
     width: 100%;
     height: 90px;
@@ -39,12 +39,12 @@ header img {
     margin-bottom: 60px;
 }
 
-.navigation ul {
+header .navigation ul {
     display: flex;
     width: 350px;
 }
 
-.navigation ul li {
+header .navigation ul li {
     position: relative;
     list-style: none;
     width: 70px;
@@ -52,7 +52,7 @@ header img {
     z-index: 1;
 }
 
-.navigation ul li a {
+header .navigation ul li a {
     position: relative;
     display: flex;
     justify-content: center;
