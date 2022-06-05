@@ -8,6 +8,10 @@
     margin: auto;
 }
 
+body {
+    position: relative;
+}
+
 /* Header */
 
 header {
@@ -176,6 +180,24 @@ header .finaly {
 }
 
 /* Main */
+
+.first_elipce {
+    position: absolute;
+    right: 0px;
+    top: 200px;
+}
+
+.second_elipce {
+    position: absolute;
+    left: -292px;
+    top: 800px;
+}
+
+.third_elipce {
+    position: absolute;
+    right: 0px;
+    top: 1600px;
+}
 
 h1 {
     display: block;
@@ -346,6 +368,7 @@ label {
 .addPhoto:hover {
     background-color: #fff;
     border: solid #F97B3A 3px;
+    cursor: pointer;
 }
 
 .addPhoto p:hover {
@@ -415,6 +438,7 @@ label {
 .send p:hover {
     color: #F97B3A;
     background-color: #fff;
+    cursor: pointer;
 }
 /* Footer */
 
@@ -433,7 +457,7 @@ footer {
         background-color: #fff;
     }
 
-    .flexbox {
+    header .flexbox {
         display: none;
     }
 
@@ -441,11 +465,11 @@ footer {
         max-width: 90%;
     }
 
-    .navigation {
+    header .navigation {
        display: flex;
     }
 
-    .indicator {
+    header .navigation .indicator {
         left: 35%;
     }
 
@@ -494,12 +518,16 @@ footer {
 }
 
 @media(max-width: 1024px) {
-    .indicator {
+    header .navigation .indicator {
         left: 32.3%;
     }
 
     .choosePicture {
         display: none;
+    }
+
+    .third_elipce {
+        top: 1690px;
     }
 }
 
@@ -508,7 +536,7 @@ footer {
         width: 93%;
     }
 
-    .indicator {
+    header .navigation .indicator {
         left: 30.2%;
     }
 }
@@ -518,13 +546,13 @@ footer {
         width: 92%;
     }
 
-    .indicator {
+    header .navigation .indicator {
         left: 28%;
     }
 }
 
 @media(max-width: 800px) {
-    .indicator {
+    header .navigation .indicator {
         left: 27.4%;
     }
 }
@@ -542,7 +570,7 @@ footer {
         width: 95%;
     }
 
-    .indicator {
+    header .navigation .indicator {
         left: 26.4%;
     }
 
@@ -558,7 +586,7 @@ footer {
 }
 
 @media(max-width: 640px) {
-    .indicator {
+    header .navigation .indicator {
         left: 21.7%;
     }
 
@@ -572,19 +600,19 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .indicator {
+    header .navigation .indicator {
         left: 20%;
     }
 }
 
 @media (max-width: 540px) {
-    .indicator {
+    header .navigation .indicator {
         left: 16.6%;
     }
 }
 
 @media(max-width: 480px) {
-    .indicator {
+    header .navigation .indicator {
         left: 12.2%;
     }
 
@@ -640,49 +668,53 @@ footer {
 }
 
 @media(max-width: 425px) {
-    .indicator {
+    header .navigation .indicator {
         left: 7.4%;
+    }
+
+    .third_elipce {
+        top: 1900px;
     }
 }
 
 @media(max-width: 414px) {
-    .indicator {
+    header .navigation .indicator {
         left: 6.4%;
     }
 }
 
 @media(max-width: 412px) {
-    .indicator {
+    header .navigation .indicator {
         left: 6%;
     }
 }
 
 @media(max-width: 393px) {
-    .navigation ul {
+    header .navigation ul {
         justify-content: space-evenly;
     }
 
-    .navigation ul li {
+    header .navigation ul li {
         width: 50px;
     }
 
-    .navigation ul li:nth-child(1).active ~ .indicator  {
+    header .navigation ul li:nth-child(1).active ~ .indicator  {
         transform: translateX(calc(66px * 0));
     }
     
-    .navigation ul li:nth-child(2).active ~ .indicator  {
+    header .navigation ul li:nth-child(2).active ~ .indicator  {
         transform: translateX(calc(66px * 1));
     }
     
-    .navigation ul li:nth-child(3).active ~ .indicator  {
+    header .navigation ul li:nth-child(3).active ~ .indicator  {
         transform: translateX(calc(66px * 2));
     }
     
-    .navigation ul li:nth-child(4).active ~ .indicator  {
+    header .navigation ul li:nth-child(4).active ~ .indicator  {
         transform: translateX(calc(66px * 3));
     }
     
-    .navigation ul li:nth-child(5).active ~ .indicator  {
+    header .navigation ul li:nth-child(5).active ~ .indicator  {
         transform: translateX(calc(66px * 4));
     }
 
@@ -692,7 +724,7 @@ footer {
 }
 
 @media(max-width: 384px) {
-    .indicator {
+    header .navigation .indicator {
         left: 4.8%;
     }
 }
@@ -718,53 +750,53 @@ footer {
         width: 303px;
     }
 
-    .indicator {
+    header .navigation .indicator {
         left: 3.8%;
     }
 }
 
 @media(max-width: 360px) {
-    .indicator {
+    header .navigation .indicator {
         left: 1.8%;
     }
 }
 
 @media(max-width: 353px) {
-    .indicator {
+    header .navigation .indicator {
         left: .8%;
     }
 }
 
 @media(max-width: 320px) {
-    .indicator {
+    header .navigation .indicator {
         left: -0.6%;
     }
 
-    .navigation ul {
+    header .navigation ul {
         justify-content: space-evenly;
     }
 
-    .navigation ul li {
+    header .navigation ul li {
         width: 40px;
     }
 
-    .navigation ul li:nth-child(1).active ~ .indicator  {
+    header .navigation ul li:nth-child(1).active ~ .indicator  {
         transform: translateX(calc(60px * 0));
     }
     
-    .navigation ul li:nth-child(2).active ~ .indicator  {
+    header .navigation ul li:nth-child(2).active ~ .indicator  {
         transform: translateX(calc(60px * 1));
     }
     
-    .navigation ul li:nth-child(3).active ~ .indicator  {
+    header .navigation ul li:nth-child(3).active ~ .indicator  {
         transform: translateX(calc(60px * 2));
     }
     
-    .navigation ul li:nth-child(4).active ~ .indicator  {
+    header .navigation ul li:nth-child(4).active ~ .indicator  {
         transform: translateX(calc(60px * 3));
     }
     
-    .navigation ul li:nth-child(5).active ~ .indicator  {
+    header .navigation ul li:nth-child(5).active ~ .indicator  {
         transform: translateX(calc(60px * 4));
     }
 
@@ -787,5 +819,9 @@ footer {
 
     .addForm {
         padding-left: 0px;
+    }
+
+    .third_elipce {
+        top: 1850px;
     }
 }
