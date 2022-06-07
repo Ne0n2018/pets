@@ -515,6 +515,18 @@ footer {
         color: #fff;
         background-color: #F97B3A;
     }
+
+    .first_elipce {
+        top: 600px;
+    }
+
+    .second_elipce {
+        top: 1400px;
+    }
+
+    .third_elipce {
+        top: 2100px;
+    }
 }
 
 @media(max-width: 1024px) {
@@ -524,6 +536,14 @@ footer {
 
     .choosePicture {
         display: none;
+    }
+
+    .first_elipce {
+        top: 400px;
+    }
+
+    .second_elipce {
+        top: 900px;
     }
 
     .third_elipce {

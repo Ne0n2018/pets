@@ -531,6 +531,12 @@ footer {
     }
 }
 
+@media (max-width: 1203px) {
+  header .navigation .indicator {
+    left: 35.4%;
+  }
+}
+
 @media (max-width: 1024px) {
     header .navigation .indicator {
         left: 32.8%;
